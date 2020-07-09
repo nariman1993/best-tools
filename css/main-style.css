@@ -50,13 +50,16 @@ body{
 .very-top-ads{
 	background: rgba(251, 255, 0, 0.322);
 	width: 100%;
-	margin: 0;
+	margin: 0 auto;
+	padding: 0;
 	min-height: 20px;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 }
@@ -186,8 +189,9 @@ body{
 header{
 	border: 1px solid #000;
 	background-color: #2d2d2d;
-	min-height: 175px;
+	min-height: 150px;
 	margin: 0 0 25px 0;
+	padding-top: 39px;
 	background-image: url('../img/header-bg.jpg');
 	background-size: cover;
 	position: relative;
@@ -344,7 +348,7 @@ main{
 }
 
 .button-banner-written:hover{
-	font-size: 30px;
+	transform: translateY(2px);
 	box-shadow: 5px 5px 5px grey;
 }
 
@@ -356,12 +360,22 @@ main{
 
 /* ----- Sub-Section PRODUCTS ----- */
 .sub-section-products{
+	border: 1px solid #ebdf3c56;
 	width: 21%;
 	margin: 10px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	border-radius: 3px;
+}
+
+.sub-section-products:hover{
+	transform: scale(1.1);
+	border: 1px solid #ebe03c;
+}
+
+.sub-section-products a{
+	color: #000;
 }
 
 .sub-section-products-img{
@@ -397,7 +411,7 @@ main{
 }
 
 .sub-section-our-brands:hover{
-	margin-top: 1px;
+	transform: translateY(3px);
 	cursor: none;
 	box-shadow: 3px 7px 8px 3px #cecece8a;
 	filter: none;
@@ -427,7 +441,6 @@ main{
 .sub-section-why-us{
 	border: 1px solid #9797979f;
 	background-color: #fff;
-	box-shadow: 0 0 15px 2px #ffff30;
 	width: 25%;
 	margin: 10px 0;
 	text-align: center;
