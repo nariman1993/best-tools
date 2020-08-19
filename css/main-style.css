@@ -66,10 +66,12 @@ body{
 
 .spell{
 	width: 50%;
+	padding: 0 0 0 6%;
 }
 
 .shopping-cart{
 	width: 50%;
+	padding: 0 6% 0 0;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -123,6 +125,15 @@ body{
 .mini-contact{
 	width: 50%;
 	height: auto;
+}
+
+.mini-contact p{
+	border-bottom: 1px solid rgba(251, 255, 0, 0.212);
+	background: rgba(251, 255, 0, 0.144);
+	margin: 0 6px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 700;
+	color: #fff;
 }
 
 .stylish-para{
